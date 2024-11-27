@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 953452739
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94d24364b4b9681fea636641e5f4eaf9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e87cc0b5992d9c70d1659e87712f8735
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6d23bf881ddbc0cdd5b464c6e84c1f71
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Models/180_rotate_arrow_anim.prefab
+Dependencies: []

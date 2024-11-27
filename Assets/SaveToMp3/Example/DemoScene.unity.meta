@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8d16458cc7636dd4d846a6dee58e6da6
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Example/DemoScene.unity
+  uploadId: 419644

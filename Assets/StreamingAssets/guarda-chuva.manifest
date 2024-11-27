@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1582164926
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 56a58a596242dc5f772c9808b06061e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 93d15f0eac3333c1e6fbefd4d154334a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: eb3172704e882186ae29c976d81a1128
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Guarda-Chuva.prefab
+Dependencies: []

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c029ee315c0c6834e90f04f619338b3b
+timeCreated: 1493208131
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Lame/NAudio/Gsm610WaveFormat.cs
+  uploadId: 419644

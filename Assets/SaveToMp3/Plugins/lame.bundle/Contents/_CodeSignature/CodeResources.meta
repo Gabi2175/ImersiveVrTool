@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a86be2cc5c33e4a5d99be6d77972cf57
+timeCreated: 1515556075
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Plugins/lame.bundle/Contents/_CodeSignature/CodeResources
+  uploadId: 419644

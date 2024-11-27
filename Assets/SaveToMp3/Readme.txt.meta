@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d318ccd73775e9c4b961ddfa67d65c5a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Readme.txt
+  uploadId: 419644

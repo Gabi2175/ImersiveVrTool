@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+CRC: 2704908039
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: carro_3
+      Dependencies: {}
+    Info_1:
+      Name: 90_rotation_arrow_anim
+      Dependencies: {}
+    Info_2:
+      Name: ardebugmenu
+      Dependencies: {}
+    Info_3:
+      Name: grama_1
+      Dependencies: {}
+    Info_4:
+      Name: carro_1
+      Dependencies: {}
+    Info_5:
+      Name: 180_rotate_arrow_anim
+      Dependencies: {}
+    Info_6:
+      Name: posto_de_gasolina
+      Dependencies: {}
+    Info_7:
+      Name: carro_4
+      Dependencies: {}
+    Info_8:
+      Name: arvore
+      Dependencies: {}
+    Info_9:
+      Name: guarda-chuva
+      Dependencies: {}
+    Info_10:
+      Name: carro_2
+      Dependencies: {}
+    Info_11:
+      Name: 360_rotate_arrow_anim
+      Dependencies: {}
+    Info_12:
+      Name: cubo_teste
+      Dependencies: {}
+    Info_13:
+      Name: cenario
+      Dependencies: {}
+    Info_14:
+      Name: asfalto
+      Dependencies: {}
+    Info_15:
+      Name: paralelepipedo_estacionamento
+      Dependencies: {}
+    Info_16:
+      Name: move_arrow_anim
+      Dependencies: {}
+    Info_17:
+      Name: move_arrow_2_anim
+      Dependencies: {}

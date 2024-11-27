@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c6f4b4f07b65e4b17980462114b9692f
+timeCreated: 1515556075
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Plugins/lame.bundle/Contents/MacOS/lame
+  uploadId: 419644

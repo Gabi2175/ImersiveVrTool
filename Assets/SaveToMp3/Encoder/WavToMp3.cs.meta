@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2bc1aa53ea1d574459f3dbb4eedc5345
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189071
+  packageName: Save AudioClip to MP3
+  packageVersion: 1.0
+  assetPath: Assets/SaveToMp3/Encoder/WavToMp3.cs
+  uploadId: 419644
