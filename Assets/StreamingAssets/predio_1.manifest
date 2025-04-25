@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1713351623
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 85ecd4f3c231682312d871776f350c4d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 66d3dcd3d2a7883b007199924643a518
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 85ecd4f3c231682312d871776f350c4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Objects/Cenario_2/Predio_1.prefab
+Dependencies: []

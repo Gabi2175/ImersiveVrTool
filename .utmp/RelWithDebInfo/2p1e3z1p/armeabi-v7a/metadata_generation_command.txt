@@ -1,0 +1,20 @@
+                        -HC:\Users\pucrs\OneDrive\Desktop\Pastas_Pessoais\ViniciusChrisosthemos\Github\ImmersiveModelingToolDev\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=31
+-DANDROID_PLATFORM=android-31
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=C:\Users\pucrs\AppData\Local\Android\Sdk\ndk\23.1.7779620
+-DCMAKE_ANDROID_NDK=C:\Users\pucrs\AppData\Local\Android\Sdk\ndk\23.1.7779620
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\pucrs\AppData\Local\Android\Sdk\ndk\23.1.7779620\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Program Files\Unity\Hub\Editor\6000.0.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\pucrs\OneDrive\Desktop\Pastas_Pessoais\ViniciusChrisosthemos\Github\ImmersiveModelingToolDev\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2p1e3z1p\obj\armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\Users\pucrs\OneDrive\Desktop\Pastas_Pessoais\ViniciusChrisosthemos\Github\ImmersiveModelingToolDev\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2p1e3z1p\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-DCMAKE_FIND_ROOT_PATH=C:\Users\pucrs\OneDrive\Desktop\Pastas_Pessoais\ViniciusChrisosthemos\Github\ImmersiveModelingToolDev\.utmp\RelWithDebInfo\2p1e3z1p\prefab\armeabi-v7a\prefab
+-BC:\Users\pucrs\OneDrive\Desktop\Pastas_Pessoais\ViniciusChrisosthemos\Github\ImmersiveModelingToolDev\.utmp\RelWithDebInfo\2p1e3z1p\armeabi-v7a
+-GNinja
+-DANDROID_STL=c++_shared
+                        Build command args: []
+                        Version: 2

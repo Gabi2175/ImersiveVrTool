@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using static PhotonServerManager;
 using System.Linq;
+using UnityEngine.InputSystem;
 
 public class SessionManager : Singleton<SessionManager>
 {
@@ -66,24 +67,6 @@ public class SessionManager : Singleton<SessionManager>
         }
 
         NetworkPhoton.Instance.OnFileTransferRequest.AddListener(OnFileRequestReceived);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.B))
-        {
-            CopySession("");
-        }
-
-        if (Input.GetKeyUp(KeyCode.N))
-        {
-            CopySession(currentSession.name.Replace(".json", ""));
-        }
-
-        if (Input.GetKeyUp(KeyCode.M))
-        {
-            CopySession("new");
-        }
     }
 
     public void LoadSessionScreen(bool guest)

@@ -1,0 +1,39 @@
+{
+  "buildFiles": [
+    "C:\\Users\\pucrs\\OneDrive\\Desktop\\Pastas_Pessoais\\ViniciusChrisosthemos\\Github\\ImmersiveModelingToolDev\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\pucrs\\OneDrive\\Desktop\\Pastas_Pessoais\\ViniciusChrisosthemos\\Github\\ImmersiveModelingToolDev\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.10f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\pucrs\\OneDrive\\Desktop\\Pastas_Pessoais\\ViniciusChrisosthemos\\Github\\ImmersiveModelingToolDev\\.utmp\\Debug\\e1p67141\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.10f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\pucrs\\OneDrive\\Desktop\\Pastas_Pessoais\\ViniciusChrisosthemos\\Github\\ImmersiveModelingToolDev\\.utmp\\Debug\\e1p67141\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "game::@d02bb112ea9f9c2ed29f": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "game",
+      "output": "C:\\Users\\pucrs\\OneDrive\\Desktop\\Pastas_Pessoais\\ViniciusChrisosthemos\\Github\\ImmersiveModelingToolDev\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\Debug\\e1p67141\\obj\\arm64-v8a\\libgame.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\pucrs\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\pucrs\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

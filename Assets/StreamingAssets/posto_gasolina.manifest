@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 3747231644
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18c33edddc35c5f3c68ccf35a2f9811e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d2a881280c3718a472192b4f2dc720c4
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 18c33edddc35c5f3c68ccf35a2f9811e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d888891d4fd728b43a380f005160a35f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Cenario/Posto_de_Gasolina.prefab
+Dependencies: []

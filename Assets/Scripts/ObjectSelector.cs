@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using System;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(LineRenderer))]
 public class ObjectSelector : MonoBehaviour
@@ -48,24 +49,24 @@ public class ObjectSelector : MonoBehaviour
     {
         if (isLeftController)
         {
-            if (Input.GetKeyUp(KeyCode.T))
+            if (Keyboard.current[Key.T].wasReleasedThisFrame)
             {
                 OnTriggerDown();
             }
 
-            if (Input.GetKeyUp(KeyCode.Y))
+            if (Keyboard.current[Key.Y].wasReleasedThisFrame)
             {
                 OnTriggerUp();
             }
         }
         else
         {
-            if (Input.GetKeyUp(KeyCode.U))
+            if (Keyboard.current[Key.U].wasReleasedThisFrame)
             {
                 OnTriggerDown();
             }
 
-            if (Input.GetKeyUp(KeyCode.I))
+            if (Keyboard.current[Key.I].wasReleasedThisFrame)
             {
                 OnTriggerUp();
             }

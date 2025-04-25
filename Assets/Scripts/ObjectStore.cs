@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
@@ -74,21 +75,6 @@ public class ObjectStore : Singleton<ObjectStore>
 
         //DownloadObjects();
         LoadObject();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.Alpha2))
-        {
-            PreviousPage();
-        }
-
-        if (Input.GetKeyUp(KeyCode.Alpha1))
-        {
-            //NextPage();
-            //Temp();
-            LoadObject();
-        }
     }
 
     public void DownloadObjects()

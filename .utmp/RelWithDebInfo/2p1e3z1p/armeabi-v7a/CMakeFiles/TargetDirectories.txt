@@ -1,0 +1,5 @@
+C:/Users/pucrs/OneDrive/Desktop/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/.utmp/RelWithDebInfo/2p1e3z1p/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/pucrs/OneDrive/Desktop/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/.utmp/RelWithDebInfo/2p1e3z1p/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/pucrs/OneDrive/Desktop/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/.utmp/RelWithDebInfo/2p1e3z1p/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+C:/Users/pucrs/OneDrive/Desktop/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/.utmp/RelWithDebInfo/2p1e3z1p/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/pucrs/OneDrive/Desktop/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/.utmp/RelWithDebInfo/2p1e3z1p/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir

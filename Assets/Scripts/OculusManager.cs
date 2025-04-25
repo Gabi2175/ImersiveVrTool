@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.InputSystem;
 
 public class OculusManager : Singleton<OculusManager>
 {
@@ -38,12 +39,12 @@ public class OculusManager : Singleton<OculusManager>
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Keyboard.current[Key.A].wasReleasedThisFrame)
         {
             ToggleEditMode(!isEditMode);
         }
 
-        if (Input.GetKeyUp(KeyCode.B))
+        if (Keyboard.current[Key.B].wasReleasedThisFrame)
         {
             OnButtonTwoClicked();
         }

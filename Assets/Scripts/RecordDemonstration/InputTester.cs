@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputTester : MonoBehaviour
 {
@@ -12,38 +13,38 @@ public class InputTester : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Alpha1))
+        if (Keyboard.current[Key.Digit1].wasReleasedThisFrame)
         {
             recordDemonstrationManager.StartRecording();
 
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha2))
+        else if (Keyboard.current[Key.Digit2].wasReleasedThisFrame)
         {
             recordDemonstrationManager.StopRecording();
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha3))
+        else if (Keyboard.current[Key.Digit3].wasReleasedThisFrame)
         {
             displayHandManager.StartPlayData();
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha4))
+        else if (Keyboard.current[Key.Digit4].wasReleasedThisFrame)
         {
             audioRecorderManager.StartRecording("audioteste.mp3");
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha5))
+        else if (Keyboard.current[Key.Digit5].wasReleasedThisFrame)
         {
             audioRecorderManager.StopRecording();
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha6))
+        else if (Keyboard.current[Key.Digit6].wasReleasedThisFrame)
         {
             TCPFileTransferManager.Instance.SetServerInfo("127.0.0.1", 5000);
             TCPFileTransferManager.Instance.SendFile("D:/Pastas_Pessoais/ViniciusChrisosthemos/Github/ImmersiveModelingToolDev/Server/1_sem-estrutura_video_demonstration.mp4", "transfer ");
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha7))
+        else if (Keyboard.current[Key.Digit7].wasReleasedThisFrame)
         {
             TCPServerManager.Instance.SetServerInfo("127.0.0.1", 12345);
             TCPServerManager.Instance.StartServer();
         }
-        else if (Input.GetKeyUp(KeyCode.Alpha8))
+        else if (Keyboard.current[Key.Digit8].wasReleasedThisFrame)
         {
             StartCoroutine(recordDemonstrationManager.GetTrainingSteps());
         }

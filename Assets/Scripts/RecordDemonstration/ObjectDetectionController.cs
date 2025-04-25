@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class ObjectDetectionController : MonoBehaviour
 {
@@ -33,6 +35,8 @@ public class ObjectDetectionController : MonoBehaviour
     private Socket socket;
     private bool isReceiving = false;
 
+    public UnityEvent<Vector2> OnBoxDetected;
+
     // Start é chamado antes do primeiro quadro de atualização
     void Start()
     {
@@ -58,16 +62,22 @@ public class ObjectDetectionController : MonoBehaviour
             var element = _objectDetectedUI[i];
 
             //element.sizeDelta = new Vector2(rectData.width * width, rectData.height * height);
-            element.anchoredPosition = new Vector2(rectData.x * _canvasRecTransform.rect.width, _canvasRecTransform.rect.height - rectData.y * _canvasRecTransform.rect.height);
+            var pos = new Vector2(rectData.x * _canvasRecTransform.rect.width, _canvasRecTransform.rect.height - rectData.y * _canvasRecTransform.rect.height);
+            element.anchoredPosition = pos;
             i++;
+            /*
+            if (key == "box")
+            {
+                OnBoxDetected?.Invoke(pos);
+            }*/
         }
 
-        if (Input.GetKeyUp(KeyCode.O))
+        if (Keyboard.current[Key.O].wasReleasedThisFrame)
         {
             LeftAxis2DChanged(_temp1);
         }
 
-        if (Input.GetKeyUp(KeyCode.P))
+        if (Keyboard.current[Key.Digit2].wasReleasedThisFrame)
         {
             RightAxis2DChanged(_temp2);
         }

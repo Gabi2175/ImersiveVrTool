@@ -43,29 +43,6 @@ public class TaskManager : MonoBehaviour
 
     private Plan plan;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Next();
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Back();
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            RemoveTask();
-        }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            AddTask();
-        }
-    }
-
     public void Next()
     {
         if (plan.CurrentTaskIndex == plan.TaskAmount - 1) return;

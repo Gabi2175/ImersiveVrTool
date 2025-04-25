@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class LoginManager : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class LoginManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.L))
+        if (Keyboard.current[Key.L].wasReleasedThisFrame)
         {
             inputFieldLogin.text = "grv";
             inputFieldPassword.text = "123";
@@ -39,7 +40,7 @@ public class LoginManager : MonoBehaviour
             Login(false);
         }
 
-        if (Input.GetKeyUp(KeyCode.G))
+        if (Keyboard.current[Key.G].wasReleasedThisFrame)
         {
             Login(true);
         }
