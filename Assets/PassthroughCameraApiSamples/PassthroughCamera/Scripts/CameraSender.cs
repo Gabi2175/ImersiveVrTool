@@ -1,5 +1,4 @@
 using System.Collections;
-using System.IO;
 using UnityEngine;
 using System.Net.Sockets;
 using PassthroughCameraSamples;
@@ -9,7 +8,11 @@ public class CameraSender : MonoBehaviour
     public WebCamTextureManager camManager;
 
     private Texture2D texture2D;
+    private Texture2D resizedTexture;
     private UdpClient client;
+
+    private byte[] latestFrameData = null;
+    private bool hasNewFrame = false;
 
     [Range(0.05f, 1.0f)]
     public float sendInterval = 0.05f; 
@@ -17,10 +20,11 @@ public class CameraSender : MonoBehaviour
     void Start()
     {
         client = new UdpClient();
-        StartCoroutine(SendFramesCoroutine());
+        StartCoroutine(CaptureCoroutine());
+        StartCoroutine(SendCoroutine());
     }
 
-    IEnumerator SendFramesCoroutine()
+    IEnumerator CaptureCoroutine()
     {
         while (true)
         {
@@ -28,7 +32,7 @@ public class CameraSender : MonoBehaviour
             {
                 WebCamTexture camTex = camManager.WebCamTexture;
 
-                if (camTex.width > 16 && camTex.height > 16) 
+                if (camTex.width > 16 && camTex.height > 16)
                 {
                     
                     if (texture2D == null || texture2D.width != camTex.width || texture2D.height != camTex.height)
@@ -39,25 +43,73 @@ public class CameraSender : MonoBehaviour
                     texture2D.SetPixels(camTex.GetPixels());
                     texture2D.Apply();
 
-                    byte[] imageBytes = texture2D.EncodeToJPG(50); //qualidade da imagem da para ajustar depois se eu quiser
+                    // Reescala a imagem pela metade
+                    int targetWidth = camTex.width / 2;
+                    int targetHeight = camTex.height / 2;
 
-                    try
+                    if (resizedTexture == null || resizedTexture.width != targetWidth || resizedTexture.height != targetHeight)
                     {
-                        client.Send(imageBytes, imageBytes.Length, "192.168.137.1", 5005);
+                        resizedTexture = new Texture2D(targetWidth, targetHeight, TextureFormat.RGB24, false);
                     }
-                    catch (System.Exception e)
-                    {
-                        Debug.LogError("Erro ao enviar frame: " + e.Message);
-                    }
+
+                    ResizeTexture(texture2D, resizedTexture);
+
+                    
+                    latestFrameData = resizedTexture.EncodeToJPG(40); 
+                    hasNewFrame = true;
                 }
             }
 
-            yield return new WaitForSeconds(sendInterval); 
+            yield return new WaitUntil(() => !hasNewFrame);
+        }
+    }
+
+    IEnumerator SendCoroutine()
+    {
+        while (true)
+        {
+            if (hasNewFrame)
+            {
+                try
+                {
+                    client.Send(latestFrameData, latestFrameData.Length, "192.168.137.1", 5005);
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("Erro ao enviar: " + e.Message);
+                }
+
+                hasNewFrame = false;
+            }
+
+            yield return null;
         }
     }
 
     void OnDestroy()
     {
         client.Close();
+    }
+
+    // Função para reduzir resolução (interpolação bilinear simples)
+    void ResizeTexture(Texture2D source, Texture2D dest)
+    {
+        Color[] pixels = new Color[dest.width * dest.height];
+
+        float incX = 1.0f / ((float)dest.width);
+        float incY = 1.0f / ((float)dest.height);
+
+        for (int y = 0; y < dest.height; y++)
+        {
+            for (int x = 0; x < dest.width; x++)
+            {
+                float u = x * incX;
+                float v = y * incY;
+                pixels[y * dest.width + x] = source.GetPixelBilinear(u, v);
+            }
+        }
+
+        dest.SetPixels(pixels);
+        dest.Apply();
     }
 }

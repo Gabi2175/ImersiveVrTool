@@ -1522,6 +1522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camManager: {fileID: 1608124433}
+  sendInterval: 0.05
 --- !u!4 &2004078468
 Transform:
   m_ObjectHideFlags: 0
